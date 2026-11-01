@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div id="welcome-page" class="welcome-container">
+        <h1 class="main-title">TO DO LIST</h1>
+        <div class="image-box">
+            <img src="assets/welcome-page.png" alt="todolist" class="todo-welcome-image">
+        </div>
+        <button id="start-btn" class="start-button">START</button>
+    </div>
+
+    <div id="dashboard-page" class="dashboard-container hidden">
+        <div class="top-section">
+            <div class="date-box" id="date-box">
+                <span id="day-text">Sunday</span>
+                <div class="date-circle">
+                    <span id="date-number">09</span>
+                </div>
+                <span id="month-text">November</span>
+                <input type="date" id="date-picker-input" class="native-date-input" aria-label="Pilih tanggal">
+            </div>
+            <div class="progression-card">
+                <span class="progression-title">Progression</span>
+                <div class="progress-bar-bg">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Write your task here..." maxlength="150">
+            <button id="add-task-btn">+</button>
+        </div>
+
+        <div class="task-list-card">
+            <ul id="task-list" class="task-list"></ul>
+        </div>
+
+        <button id="finish-btn" class="finish-button">FINISH</button>
+        
+        <div class="credit-footer">
+            KELOMPOK 1 - 2026
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
